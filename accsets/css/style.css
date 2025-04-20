@@ -1,76 +1,62 @@
-/* 1. Use a more-intuitive box-sizing model */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* 2. Remove default margin */
 * {
-    margin: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
-/* 3. Enable keyword animations */
-@media (prefers-reduced-motion: no-preference) {
-    html {
-        interpolate-size: allow-keywords;
-    }
+:root {
+    --primary-color: #171100
+}
+
+.btn {
+    width: 118px;
+    height: 50px;
+    border-radius: 999px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
-    /* 4. Add accessible line-height */
-    line-height: 1.5;
-    /* 5. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
+    height: 1000px;
 }
 
-/* 6. Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
+.btn a {
+    color: #fff;
 }
 
-/* 7. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select {
-    font: inherit;
+/* Header CSS */
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding-top: 36px;
+    padding-bottom: 8px;
+    position: sticky;
+    top: -28px;
 }
 
-/* 8. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
+.header .content {
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    height: 50px;
+
 }
 
-/* 9. Improve line wrapping */
-p {
-    text-wrap: pretty;
+header .logo {
+    margin-right: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
+.header .nav {
+    display: flex;
 }
 
-/*
-    10. Create a root stacking context
-  */
-#root,
-#__next {
-    isolation: isolate;
+.header .nav li {
+    padding: 8px 21px;
+}
+
+.header .btn {
+    width: 144px;
+    margin-left: 50px;
 }
