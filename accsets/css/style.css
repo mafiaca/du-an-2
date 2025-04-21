@@ -1,10 +1,27 @@
 * {
     text-decoration: none;
     list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-color);
 }
 
 :root {
-    --primary-color: #171100
+    --primary-color: #171100;
+    --text-color: #5F5B53;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.hero {
+    height: 1000px;
 }
 
 .btn {
@@ -15,33 +32,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-body {
-    height: 1000px;
+.btn a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
 }
+
 
 .btn a {
     color: #fff;
 }
 
+.content {
+    width: 1170px;
+
+}
+
 /* Header CSS */
 
 .header {
-    display: flex;
-    justify-content: center;
     padding-top: 36px;
     padding-bottom: 8px;
     position: sticky;
     top: -28px;
+    margin-bottom: 64px;
+    background-color: #fff;
+    z-index: 10000;
 }
 
 .header .content {
     display: flex;
     align-items: center;
-    width: 1170px;
-    height: 50px;
-
 }
 
 header .logo {
@@ -56,7 +80,199 @@ header .logo {
     padding: 8px 21px;
 }
 
+.header .nav li a {
+    font-size: 16px;
+    color: var(--text-color);
+
+}
+
+.header .nav li:first-child a {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
 .header .btn {
     width: 144px;
-    margin-left: 50px;
+    margin-left: 70px;
+}
+
+.header .btn a {
+    font-size: 16px;
+}
+
+
+/* Hero CSS */
+
+/* ----BG----- */
+
+.hero .content {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 685px;
+
+}
+
+.hero .bg {
+    position: relative;
+}
+
+.hero .bg>img {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero .card {
+    width: 270px;
+    height: 244px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    background-color: #fff;
+    position: absolute;
+
+    right: -100px;
+    top: 393px;
+}
+
+.hero .card .course {
+    display: flex;
+    gap: 16px;
+    margin-left: 24px;
+}
+
+.hero .course .icon {
+    width: 48px;
+    height: 48px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+
+}
+
+.hero .course .label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .course img {
+    width: 24px;
+    height: 24px;
+}
+
+.hero .course-qty {
+    line-height: 26px;
+}
+
+.hero .course-name {
+    color: #171100;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.hero .course .icon1 {
+    background-color: #FFF9E8;
+    ;
+}
+
+.hero .course .icon2 {
+    background-color: #FCEFFF;
+    ;
+}
+
+.hero .course .icon3 {
+    background-color: #EBEAFF;
+    ;
+}
+
+/* ----- bg-right-------*/
+
+.hero .bg-right {
+    width: 470px;
+    height: 204px;
+    margin-top: 64px;
+}
+
+.hero .bg-right .title {
+    color: var(--primary-color);
+    font-family: Sen;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 68px;
+    /* 117.241% */
+    letter-spacing: -1.16px;
+    margin-bottom: 22px;
+}
+
+.hero .bg-right .desc {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.hero .cta-group {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 48px;
+    margin-top: 38px;
+}
+
+.hero .cta-group .btn {
+    background-color: #FFB900;
+    width: 180px;
+    height: 64px;
+}
+
+.hero .cta-group .btn a {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero .cta-group .watch-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.play {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.watch-btn img {
+    width: 10px;
+    height: 12px;
+}
+
+
+.hero .stats {
+    display: flex;
+    gap: 28px;
+    margin-top: 8px;
+}
+
+.hero .stats strong {
+    color: var(--primary-color);
+    font-family: Sen;
+    font-size: 44px;
+    font-weight: 700;
+    /* 122.727% */
+}
+
+.hero .stats .item {
+    width: 173px;
+    height: 54px;
 }
