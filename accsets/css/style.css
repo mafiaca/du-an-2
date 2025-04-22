@@ -276,3 +276,79 @@ header .logo {
     width: 173px;
     height: 54px;
 }
+
+
+/* Courses CSS */
+
+.courses .row-left .title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.76px;
+    margin-bottom: 16px;
+}
+
+.courses .row-left .desc {
+    font-size: 18px;
+    line-height: 30px;
+    width: 458px;
+    height: 60px;
+}
+
+.courses .content .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.courses .controls {
+    display: flex;
+    gap: 18px;
+}
+
+.courses .controls-btn img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.courses .controls-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+}
+
+.courses .list-courses {
+    margin-bottom: 200px;
+}
+
+.courses .courses-item {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 466px;
+    border-radius: 12px;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid #E2DFDA;
+}
+
+.courses .courses-item>img {
+    border-radius: 12px;
+    width: 370px;
+    height: 278px;
+    margin-bottom: 16px;
+}
+
+.courses .courses-item .row {
+    margin: 16px 22px 12px;
+}
+
+.courses .info .view {
+    display: flex;
+}
